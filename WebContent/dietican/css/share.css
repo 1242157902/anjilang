@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部*/
+.top {
+	width: 100%;
+	height: 38px;
+	background: #f7f7f7;
+	background-size: cover;
+}
+
+.top .top-in {
+	width: 1200px;
+	height: 38px;
+	margin: 0 auto;
+}
+
+.top .top-in .top-in-l p {
+	line-height: 38px;
+	float: left;
+	color: #545454;
+	width: 120px;
+	height: 38px;
+}
+
+.top .top-in .erweima {
+	background: url(../images/icon-png.png) no-repeat;
+	background-position: -2px -23px;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 10px 0 0 3px;
+	cursor: pointer;
+	position: relative;
+	z-index: 999;
+}
+
+.top .top-in .erweima .erweima-x b {
+	background: url(../images/triangle.png) no-repeat;
+	position: absolute;
+	top: -8px;
+	left: 77px;
+	width: 14px;
+	height: 8px;
+}
+
+.top .top-in .erweima .erweima-x {
+	position: absolute;
+	top: 25px;
+	left: -76px;
+	height: 178px;
+	width: 178px;
+	display: none;
+	background: url(../images/canvas.png) no-repeat;
+}
+
+.top .top-in .erweima:hover .erweima-x {
+	display: block;
+	z-index: 999;
+}
+
+.top .top-in .qq {
+	background: url(../images/icon-png.png) no-repeat;
+	float: right;
+	background-position: -2px -45px;
+	width: 16px;
+	height: 16px;
+	margin: 10px 0 0 7px;
+	cursor: pointer;
+}
+
+.top .top-in .xlweb {
+	background: url(../images/icon-png.png) no-repeat;
+	float: right;
+	background-position: -3px -68px;
+	width: 16px;
+	height: 16px;
+	margin: 10px 0 0 10px;
+	cursor: pointer;
+}
+
+.top .top-in .top-in-r {
+	height: 29px;
+	float: right;
+	padding-top: 9px
+}
+
+.top .top-in .top-in-r li {
+	float: left;
+	color: #000;
+	height: 29px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.top .top-in .top-in-r li p a {
+	line-height: 20px;
+	cursor: pointer;
+	color: #808080;
+}
+
+.top .top-in .top-in-r li p {
+	float: left;
+}
+
+.top .top-in .top-in-r span {
+	background: url(../images/icon_png.png);
+	width: 25px;
+	height: 20px;
+	margin-right: 2px;
+	float: left;
+}
+
+.top .top-in .top-in-r .num2 span {
+	background-position: 0 -23px;
+	height: 25px;
+}
+
+.top .top-in .top-in-r .num2 {
+	margin-right: 4px;
+	margin-left: 10px;
+}
+/*logo开始*/
+.logo {
+	width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+.logo .img {
+	float: left;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+
+.logo .img img {
+	width: 270px;
+	height: 70px;
+}
+
+.logo-bg {
+	background: url(../images/logo-bg.png) no-repeat;
+	float: left;
+	width: 173px;
+	height: 90px;
+}
+
+.logo input {
+	width: 326px;
+	height: 34px;
+	border: 1px solid #ccc;
+	margin: 32px 0 0 36px;
+	float: left;
+	font-size: 14px;
+	line-height: 34px;
+	text-indent: 0.5em;
+	color: #505050;
+}
+
+.input {
+	position: relative;
+}
+
+.logo input .input {
+	width: 326px;
+	height: 34px;
+	position: relative;
+}
+
+.logo .input i {
+	background: url(../images/magnifier.jpg) no-repeat;
+	position: absolute;
+	top: 41px;
+	left: 64%;
+	width: 25px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.logo .input span {
+	width: 1px;
+	height: 20px;
+	background: url(../images/shu.jpg) no-repeat;
+	position: absolute;
+	top: 41px;
+	left: 63%;
+}
+
+.logo .logo-r {
+	float: right;
+	margin-top: 20px;
+}
+
+.logo .logo-r img {
+	width: 292px;
+	height: 25px;
+	margin-top: -1px;
+}
+/*导航栏开始*/
+.nav {
+	width: 100%;
+	height: 50px;
+	border-top: 1px #ec8aa3 solid;
+	background-color: #ff5370;
+	z-index: 99999;
+}
+
+.nav .nav-in {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 99;
+}
+
+.nav .nav-in .nav_l {
+	width: 320px;
+	height: 50px;
+	float: left;
+	background: #ED4D69;
+}
+
+.nav .nav-in .nav_l p {
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+	line-height: 50px;
+	font-weight: normal;
+}
+
+.nav .nav-in .nav_t {
+	position: relative;
+}
+
+.nav .nav-in .nav_t a {
+	font-size: 16px;
+	color: #FFF;
+	float: left;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.nav .nav-in .nav_t a:hover {
+	background: url(../images/nav_03.png) repeat-x;
+}
+
+.nav .nav-in .nav_t span {
+	width: 30px;
+	height: 21px;
+	background: url(../images/new.png);
+	position: absolute;
+	top: -8px;
+	left: 64%;
+}
+
+/*找营养师*/
+.nutritionists {
+	width: 1204px;
+	height: 110px;
+	margin: 0 auto;
+	margin-top: 108px;
+	
+}
+
+.nutritionists-1 {
+	float: left;
+	margin-left: 24px;
+	width: 269px;
+	height: 107px;
+	border: 1px solid #ccc;
+}
+
+.nutritionists-1 span {
+	background: url(../images/fdj.jpg) no-repeat;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 19px 10px 0 29px;
+}
+
+.nutritionists-1 h3 {
+	margin: 20px 0 0 8px;
+}
+
+.nutritionists-1 h3 a {
+	font-weight: normal;
+	cursor: pointer;
+	font-size: 16px;
+	color: #323232;
+}
+
+.nutritionists-1 p {
+	margin: 10px 30px 0 30px;
+	color: #676767;
+}
+
+
+/*底部*/
+.bottom {
+	background: #f0ede6;
+	height: 150px;
+	margin-top: 40px;
+	padding: 35px 0;
+}
+
+.bottom-in {
+	width: 1200px;
+	height: 230px;
+	margin: 0 auto;
+}
+
+.bottom-in .logo {
+	padding: 0;
+	width: 280px;
+}
+
+.bottom-in dl {
+	border-right: 1px solid #95723e;
+	color: #b08e5b;
+	float: left;
+	height: 150px;
+	padding-left: 30px;
+	width: 120px;
+}
+
+.bottom-in .last {
+	border: medium none;
+	height: 40px;
+	padding-left: 20px;
+	padding-top: 110px;
+	position: relative;
+	width: 423px;
+}
+
+.bottom-in .last-btn {
+	height: 40px;
+}
+
+.bottom-in .last-btn li {
+	float: left;
+	margin-right: 12px;
+}
+
+.bottom-in .last-btn li a {
+	display: block;
+	height: 40px;
+	width: 129px;
+	background: url(../images/indexicon.png) no-repeat;
+}
+
+.bottom-in .last-btn li a:hover {
+	background-position: 0 -50px;
+	text-decoration: none;
+	transition: all 0.3s ease-in 0s;
+	-webkit-transition: all 0.3s ease-in 0s;
+	-ms-transition: all 0.3s ease-in 0s;
+}
+
+.bottom-in dl dd {
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+.bottom-in dl dd a {
+	color: #b08e5b;
+}
+
+.bottom-in dt {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.link {
+	border-bottom: 1px solid #f2f2f2;
+	color: #999999;
+	line-height: 22px;
+	padding: 10px 0;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.link a {
+	color: #333;
+}
+
+.sm {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.sm p {
+	color: #ccc;
+	margin-top: 10px;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td,button{ margin:0; padding:0;  }
+img { border:0; vertical-align: middle;}
+body{font-size:12px; color:#555555; font-family:"微软雅黑"; line-height:24px; }
+ img { border:0; display:block; /*防止图片底下3像素的空白缝隙 */}
+a{ text-decoration: none;}
+li{list-style: none;}
+
+
+/*小组申请*/
+.apply{width:1200px; height:500px;  margin:0 auto; position:relative;}
+.apply-in{width:365px; margin:0 auto; position:absolute; top:20%; left:35%;}
+.apply-in dt{background:url(../images/apply_yes.png) no-repeat; width:69px; height:60px;  margin:0 0 36px 130px;}
+.apply-in dd{color:#000; }
+.apply-in span{margin-top:50px;}
+.apply-in .return{width:117px; height:29px; background:#FF5371; text-align:center; display:inline-block; border-radius:4px; 
+-webkit-border-radius:4px; 
+-moz-border-radius:4px; 
+-ms-border-radius:4px; float:left;}
+.apply-in .return a{color:#fff; line-height:29px;}
+.apply-in .indexs{width:117px; height:29px; background:#FF5371; text-align:center; display:inline-block; border-radius:4px; 
+-webkit-border-radius:4px; 
+-moz-border-radius:4px; 
+-ms-border-radius:4px; float:right;}
+.apply-in .indexs a{color:#fff; line-height:29px;}
+
