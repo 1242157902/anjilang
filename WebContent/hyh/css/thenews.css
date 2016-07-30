@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td,button{ margin:0; padding:0;  }
+img { border:0; vertical-align: middle;}
+body{font-size:12px; color:#555555; font-family:"微软雅黑"; line-height:24px; }
+ img { border:0; display:block; /*防止图片底下3像素的空白缝隙 */}
+a{ text-decoration: none;}
+li{list-style: none;}
+
+
+/*小组申请*/
+.apply{width:1200px; height:757px;  margin:0 auto;}
+.apply ul i{width:13px; height:14px; float:left; background:url(../images/icon-png.png)  no-repeat; margin-top:4px ; background-position:-4px -91px;}
+
+.apply .list{ margin:30px 0 46px 0; height:12px;}
+.apply .list ul li{float:left; margin-left:7px; height:12px;}
+.apply  .list ul li a{color:#A3A3A3;}
+
+ .apply .tube{height:40px;position:relative;}
+
+.apply .tube ul li{width:119px; height:37px;background:url(../images/tube.png) no-repeat right;   float:left; margin-left:10px; text-align:center;}
+.apply .tube ul li a{line-height:33px; color:#753F3F;}
+.apply .tube ul li:first-child{margin:0;}
+.apply .tube ul .first{background:url(../images/tube.png)  no-repeat; }
+.apply .tube ul .first a{color:#FFF;}
+.apply .tube ul .first div{background:url(../images/tube.png) no-repeat; border:0;}
+
+.apply .apply-in{height:501px;  margin-top:40px;}
+.apply .apply-in_left{width:857px; height:501px;  float:left;}
+.apply .apply-in_left p{font-size:14px;}
+ .apply .apply-in_left .janes{width:755px; height:367px; margin:23px 0 30px 0;}
+.apply .apply-in_left  .unit{width:755px; height:46px; background:#F5F5F5; border:1px solid #ccc; }
+.apply .apply-in_left  .unit  ul li{width:14px; height:14px;  float:left; margin:15px 0 0 14px;}
+.apply .apply-in_left  textarea{width:751px; height:315px; margin-top:-1px;  resize: none; font-size:14px; overflow:hidden; color:#505050;}
+
+.apply .btn input{width:178px; height:43px; background:#FF5371;  border-width:0; font-size:16px; border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;
+-ms-border-radius:5px; color:#FFFFFF; border:1px solid ##DE7B8D; -webkit-border:1px solid #DE7B8D;-moz-border:1px solid #DE7B8D;-ms-border:1px solid #DE7B8D; cursor:pointer; font-weight:bold;}
+
+
+.apply .apply-in_right{width:311px; height:437px; background:url(../images/applt-in_r.jpg) no-repeat; float:right; }
+
+

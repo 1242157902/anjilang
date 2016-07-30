@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td,button{ margin:0; padding:0;  }
+body{font-size:12px; color:#555555; font-family:"微软雅黑";  }
+li{list-style: none;}
+
+.relea{
+	margin:0 auto; 
+	margin-top:23px;
+	width:1200px;
+}
+
+.relea-t{
+	height:30px;
+	border-bottom:1px solid #ccc; 
+	width:856px;
+}
+
+.uestions{width:855px;  margin-top:5px; }
+ .uestions tr td{border-bottom:1px dashed #ccc;padding-bottom:10px; }
+#newhead{font-size:14px;color:#EDA000}
+.uestions tr td ul{padding-left:30px;width:455px;padding-bottom:5px;}
+.uestions tr td ul li{padding-top:10px; }
+

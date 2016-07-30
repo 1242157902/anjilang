@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td,button{ margin:0; padding:0;  }
+img { border:0; vertical-align: middle;}
+body{font-size:12px; color:#555555; font-family:"微软雅黑"; line-height:24px; }
+ img { border:0; display:block; /*防止图片底下3像素的空白缝隙 */}
+a{ text-decoration: none;}
+li{list-style: none;}
+
+
+/*小组申请*/
+.apply{width:1200px; height:776px;  margin:0 auto;}
+.apply ul i{width:13px; height:14px; float:left; background:url(../images/icon-png.png)  no-repeat; margin-top:4px ; background-position:-4px -91px;}
+
+.apply .list{ margin:30px 0 46px 0; height:12px;}
+.apply .list ul li{float:left; margin-left:7px; height:12px;}
+.apply  .list ul li a{color:#A3A3A3;}
+
+ .apply .tube{height:40px;position:relative;}
+
+.apply .tube ul li{width:119px; height:37px;background:url(../images/tube.png) no-repeat right;   float:left; margin-left:10px; text-align:center;}
+.apply .tube ul li a{line-height:33px; color:#753F3F;}
+.apply .tube ul li:first-child{margin:0;}
+.apply .tube ul .first{background:url(../images/tube.png)  no-repeat; }
+.apply .tube ul .first a{color:#FFF;}
+.apply .tube ul .first div{background:url(../images/tube.png) no-repeat; border:0;}
+
+.apply .apply-in{height:501px;  margin-top:40px;}
+.apply .apply-in_left{width:857px;/*  height:501px; */  float:left;}
+.apply .apply-in_left .kel ul{height:30px; border-bottom:2px solid #F6F6F6;}
+.apply .apply-in_left .kel ul li{float:left;}
+.apply .apply-in_left .kel ul li a{color:#3F3F3F; font-size:15px;  margin-left:14px;}
+.apply .apply-in_left .kel ul .one a{color:#FF5371; margin:0;}
+.apply .apply-in_left .tiezi{margin-top:12px;}
+
+
+.undis{display:none;}
+.apply .apply-in_left .name input{width:405px; height:40px; border:1px solid #ccc ; font-size:16px;  line-height:40px; text-indent:0.5em; color:#666;}
+.apply .apply-in_left .choose-form{height:35px;line-height:35px;font-size:14px;color:#505050;}
+.apply .apply-in_left .choose-form label{width:75px;height:30px;line-height:30px;float:left;cursor:pointer;}
+.apply .apply-in_left .choose-form .choose{width:121px;float:left;position:relative;}
+.apply .apply-in_left .choose-form .choose .hd{padding-left:10px;height:30px;width:90px;border:1px solid #ccc; cursor:pointer;position:relative; margin-top:3px;  line-height:30px;}
+.apply .apply-in_left .choose-form .choose .hd i{width:14px;  height:9px;  background:url(../images/choice.png) no-repeat;position:absolute; top:11px; right:10px;}
+.apply .apply-in_left .choose-form .choose .bd{width:101px; max-height:300px; position:absolute; top:34px; left:0; border:1px solid #cacaca; background:#fff; z-index:3;}
+.apply .apply-in_left .choose-form .choose .bd li{padding-left:10px;height:39px;line-height:39px;cursor:pointer;}
+
+
+
+.apply .apply-in_left .tiezi tr td{height:43px; border-bottom:1px dashed #ccc;}
+.apply .apply-in_left .tiezi tr td input{margin:6px 13px 0 0 ; float:left;}
+.apply .apply-in_left .tiezi tr td:first-child{font-size:14px; color:#000;}
+.apply .apply-in_left .tiezi tr td b{
+	/* width:16px;
+    height:16px; */
+    float:left;
+    margin:5px 7px 0 0;
+ }
+#main_pagination{margin-top:30px; float:right;}
+#main_pagination p{float:left; margin-right:5px;}
+#main_pagination a{ margin-left: 5px; padding: 2px 6px; color:#696666; }
+#main_pagination .one1{height:24px; background:#ff5371; border-radius:3px;  color:#fff;}
+.apply .apply-in_left .btns{background: none repeat scroll 0 0 #ff5371;
+clear:both;
+    border-radius: 5px;
+    border-width: 0;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    height: 43px;
+   /*  margin-top: 88px; */
+    width: 178px;
+    margin-bottom:30px  !important;
+    margin-top:10px;
+     margin-bottom:10px}	
+.apply .apply-in_right{width:311px; height:437px; background:url(../images/applt-in_r.jpg) no-repeat; float:right; }
+
+

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td,button{ margin:0; padding:0;  }
+img { border:0; vertical-align: middle;}
+body{font-size:12px; color:#555555; font-family:"微软雅黑"; line-height:24px; }
+ img { border:0; display:block; /*防止图片底下3像素的空白缝隙 */}
+a{ text-decoration: none;}
+li{list-style: none;}
+
+
+/*小组申请*/
+.apply{width:1200px; height:685px;  margin:0 auto;}
+.apply ul i{width:13px; height:14px; float:left; background:url(../images/icon-png.png)  no-repeat; margin-top:4px ; background-position:-4px -91px;}
+
+.apply .list{ margin:30px 0 46px 0; height:12px;}
+.apply ul li{float:left; margin-left:7px; height:12px;}
+.apply ul li a{color:#A3A3A3;}
+.apply h2{height:40px;  font-size:14px; font-weight: normal; border-bottom:2px solid #ccc;}
+.apply .apply-in{height:430px;  margin-top:40px;}
+.apply .apply-in_left{width:857px; height:430px;  float:left;}
+
+
+
+
+/*.apply .apply-in_left .fication select{width:121px; height:34px; overflow:hidden; line-height:34px; float:left; font-size:14px; color:#666;}*/
+.undis{display:none;}
+
+.choose-form{height:34px;line-height:34px;font-size:14px;color:#505050; float:left;}
+.choose-form label{width:75px;height:38px;line-height:38px;float:left;cursor:pointer;}
+.choose-form .choose{width:121px;float:left;position:relative;z-index:1000;}
+.choose-form .choose .hd{padding-left:10px;height:34px;width:121px;border:1px solid #ccc; cursor:pointer;position:relative;}
+.choose-form .choose .hd i{width:14px;  height:9px;  background:url(../images/choice.png) no-repeat;position:absolute; top:13px; right:10px;}
+.choose-form .choose .bd{width:131px;max-height:300px;position:absolute;top:35px;left:0;border:1px solid #cacaca;background:#fff;z-index:3;}
+.choose-form .choose .bd li{padding-left:10px;height:39px;line-height:39px;cursor:pointer; width:131px;}
+
+
+
+.apply .apply-in_left .fication input{width:700px; height:34px; float:right; font-size:14px; color:#ccc; line-height:34px; resize: none; color:#999; text-indent:0.5em; border:1px solid #ccc;}
+.apply .apply-in_left .jane{margin-top:25px; float:left;}
+.apply .apply-in_left .jane .janes{width:755px; height:367px; }
+.apply .apply-in_left .janes .unit{width:857px; height:46px; background:#F5F5F5; border:1px solid #ccc;}
+.apply .apply-in_left .janes .unit  ul li{width:18px; height:18px;  float:left; margin:15px 0 0 14px;}
+.apply .apply-in_left .janes .unit .shu{width:1px; height:34px; margin:5px 0 0 18px;}
+.apply .apply-in_left .janes textarea{width:853px; height:315px; margin-top:-1px;  resize: none; font-size:14px;}
+
+.apply .btn input{width:178px; height:43px; background:#FF5370;  border-width:0; font-size:16px; border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;
+-ms-border-radius:5px; color:#FFFFFF; border:1px solid #ccc; -webkit-border:1px solid #ccc;-moz-border:1px solid #ccc;-ms-border:1px solid #B2B2B2; cursor:pointer; margin-top:42px;}
+.apply .apply-in_right{width:311px; height:437px; background:url(../images/applt-in_r.jpg) no-repeat; float:right;}
+

@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td,button{ margin:0; padding:0;  }
+img { border:0; vertical-align: middle;}
+body{font-size:12px; color:#555555; font-family:"微软雅黑"; line-height:24px; }
+ img { border:0; display:block; /*防止图片底下3像素的空白缝隙 */}
+a{ text-decoration: none;}
+li{list-style: none;}
+
+
+/*小组申请*/
+.apply{width:1200px; height:757px;  margin:0 auto;}
+.apply ul i{width:13px; height:14px; float:left; background:url(../images/icon-png.png) no-repeat; margin-top:4px ; background-position:-5px -113px;}
+
+.apply .list{ margin:30px 0 46px 0; height:12px;}
+.apply .list ul li{float:left; margin-left:7px; height:12px;}
+.apply .list ul li a{color:#A3A3A3;}
+.apply h2{height:40px;  font-size:14px; font-weight: normal; border-bottom:2px solid #ccc;}
+.apply .apply-in{height:501px;  margin-top:40px;}
+.apply .apply-in_left{width:857px; height:501px;  float:left;}
+.apply .apply-in_left .name input{width:406px; height:40px; border:1px solid #ccc; color:#505050; font-size:14px; text-indent: 0.5em; }
+.apply .apply-in_left label{float:left;font-size:14px;  margin:4px 32px 0 0;}
+ .choose-form{height:40px;line-height:40px;font-size:14px;color:#505050;}
+ .undis{display:none;}
+.apply .apply-in_left .fication .choose-form{width:400px;height:30px;line-height:30px;font-size:14px;color:#505050;}
+.apply .apply-in_left .fication .choose-form label{width:75px;height:38px;line-height:38px;float:left;cursor:pointer;}
+.apply .apply-in_left .fication .choose-form .choose{width:92px;float:left;position:relative;z-index:1000;}
+.apply .apply-in_left .fication .choose-form .choose .hd{padding-left:10px;height:30px;width:92px;border:1px solid #ccc; cursor:pointer;position:relative; margin-top:3px; }
+.apply .apply-in_left .fication .choose-form .choose .hd i{width:14px;  height:9px;  background:url(../images/choice.png) no-repeat;position:absolute; top:10px; right:10px;}
+.apply .apply-in_left .fication .choose-form .choose .bd{width:102px; max-height:300px; position:absolute; top:34px; left:0; border:1px solid #cacaca; background:#fff; z-index:3;}
+.apply .apply-in_left .fication .choose-form .choose .bd li{padding-left:10px;height:39px;line-height:39px;cursor:pointer;}
+/*.apply .apply-in_left .name .names input{width:405px; height:40px; border:1px solid #ccc ; font-size:14px;  line-height:40px; }*/
+
+.apply .apply-in_left .fication{margin:40px 0 40px 0;}
+.apply .apply-in_left .fication .label{margin:0px 26px 0 0; }
+
+.apply .apply-in_left .jane .janes{width:755px; height:367px; float:right; }
+.apply .apply-in_left .janes .unit{width:755px; height:46px; background:#F5F5F5; border:1px solid #ccc;}
+.apply .apply-in_left .janes .unit  ul li{width:14px; height:14px;  float:left; margin:15px 0 0 14px;}
+.apply .apply-in_left .janes textarea{width:751px; height:315px; margin-top:-1px;  resize: none; overflow:hidden; color:#505050; font-size:14px;}
+.apply .btn{margin:38px 0 0 102px; }
+.apply .btn {
+	width:178px;
+    height:43px;
+    background:#FF5370; 
+     border-width:0; 
+     font-size:16px; 
+     border-radius:5px;
+     -webkit-border-radius:5px;
+     -moz-border-radius:5px;
+    -ms-border-radius:5px;
+     color:#FFFFFF;
+      border:1px solid #ccc; 
+      -webkit-border:1px solid #ccc;
+      -moz-border:1px solid #ccc;
+      -ms-border:1px solid #B2B2B2;
+      cursor:pointer;}
+.apply .apply-in_right{width:311px; height:437px; background:url(../images/applt-in_r.jpg) no-repeat; float:right;}
