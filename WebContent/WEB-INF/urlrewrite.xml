@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+
+<!--
+
+    Configuration file for UrlRewriteFilter
+    http://tuckey.org/urlrewrite/
+
+-->
+<urlrewrite>
+
+    
+	<!-- 首页 -->  
+    <rule>  
+        <from>/index.html</from>  
+        <to>/index/index.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/index/index.do</from>  
+        <to>/index.html</to>  
+    </outbound-rule>  
+    <outbound-rule>  
+        <from>/friendLink/queryNewAjax.do</from>  
+        <to>/index.html</to>  
+    </outbound-rule>  
+
+	<!-- 问答 -->
+	<rule>  
+        <from>/ask/([0-9]+).html$</from>  
+        <to>/answer/answer.do?questionId=$1</to>  
+    </rule>  
+    <!-- 没有效果 why? <outbound-rule>
+		<from>/answer/answer.do\?questionId=([0-9]+)$</from>
+		<to>/ask/$1</to>     
+     </outbound-rule> -->
+	
+	<rule>  
+        <from>/ask/</from>  
+        <to>/answer/index.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/answer/index.do</from>  
+        <to>/ask/</to>  
+    </outbound-rule>  
+    
+	<!-- 医生 -->
+	<rule>  
+        <from>/doc/([0-9]+).html$</from>  
+        <to>/personPage/toPersonPageIndex.do?userId=$1</to>  
+    </rule>  
+     <outbound-rule>
+		<from>/personPage/toPersonPageIndex.do\?userId=([0-9]+)$</from>
+		<to>/doc/$1.html</to>     
+     </outbound-rule>
+     
+	<rule>  
+        <from>/doc/</from>  
+        <to>/doctor/finddoctor.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/doctor/finddoctor.do</from>  
+        <to>/doc/</to>  
+    </outbound-rule>  
+    
+    
+    <!-- 资讯 -->
+    
+    <rule>  
+        <from>/news/([0-9]+).html$</from>  
+        <to>/infor/toInforDetail.do?id=$1</to>  
+    </rule>  
+     <outbound-rule>
+		<from>/infor/toInforDetail.do\?id=([0-9]+)$</from>
+		<to>/news/$1.html</to>     
+     </outbound-rule>
+    
+    
+    <rule>  
+        <from>/news/</from>  
+        <to>/infor/toInforChannel.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/infor/toInforChannel.do</from>  
+        <to>/news/</to>  
+    </outbound-rule>  
+    
+    <!-- 登陆 -->
+    <rule>  
+        <from>/login.html</from>  
+        <to>/login/login.jsp</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/login/login.jsp</from>  
+        <to>/login.html</to>  
+    </outbound-rule>
+    
+    <!-- 找回密码 -->
+    <rule>  
+        <from>/forgetpassword.html</from>  
+        <to>/forgetpassword.jsp</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/forgetpassword.jsp</from>  
+        <to>/forgetpassword.html</to>  
+    </outbound-rule>
+    
+    <!-- 账号设置 -->
+    <rule>  
+        <from>/user/1.html</from>  
+        <to>/user/setAccountMod.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/user/setAccountMod.do</from>  
+        <to>/user/1.html</to>  
+    </outbound-rule>
+    
+    <rule>  
+        <from>/user/2.html</from>  
+        <to>/user/setAccountHead.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/user/setAccountHead.do</from>  
+        <to>/user/2.html</to>  
+    </outbound-rule>
+    
+    <rule>  
+        <from>/user/3.html</from>  
+        <to>/user/setAccountPwd.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/user/setAccountPwd.do</from>  
+        <to>/user/3.html</to>  
+    </outbound-rule>
+    
+    <!-- 医生注册 -->
+    <rule>  
+        <from>/regist/doc.html</from>  
+        <to>/regist/init.do</to>  
+    </rule>  
+    <outbound-rule>  
+        <from>/regist/init.do</from>  
+        <to>/regist/doc.html</to>  
+    </outbound-rule>
+    
+    
+    <!-- 患友会 -->
+    
+    
+    <!--
+    INSTALLATION
+
+        in your web.xml add...
+
+        <filter>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+            <init-param>
+                <param-name>logLevel</param-name>
+                <param-value>WARN</param-value>
+            </init-param>
+        </filter>
+        <filter-mapping>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+     EXAMPLES
+
+     Redirect one url
+        <rule>
+            <from>/some/old/page.html</from>
+            <to type="redirect">/very/new/page.html</to>
+        </rule>
+
+    Redirect a directory
+        <rule>
+            <from>/some/olddir/(.*)</from>
+            <to type="redirect">/very/newdir/$1</to>
+        </rule>
+
+    Clean a url
+        <rule>
+            <from>/products/([0-9]+)</from>
+            <to>/products/index.jsp?product_id=$1</to>
+        </rule>
+    eg, /products/1234 will be passed on to /products/index.jsp?product_id=1234 without the user noticing.
+
+    Browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <from>/some/page.html</from>
+            <to>/some/page-for-old-browsers.html</to>
+        </rule>
+    eg, will pass the request for /some/page.html on to /some/page-for-old-browsers.html only for older
+    browsers whose user agent srtings match Mozilla/1, Mozilla/2, Mozilla/3 or Mozilla/4.
+
+    Centralised browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <set type="request" name="browser">moz</set>
+        </rule>
+    eg, all requests will be checked against the condition and if matched
+    request.setAttribute("browser", "moz") will be called.
+
+    -->
+
+</urlrewrite>
+
