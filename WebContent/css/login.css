@@ -1,0 +1,217 @@
+.fr {
+	float: right
+}
+
+.login_bg {
+	background-image: url(../image/login_bg.jpg);
+	background-size: cover;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+.login_logo {
+	background: url(../image/logo.png) no-repeat;
+	width: 254px;
+	height: 47px;
+	margin: 60px auto 30px auto;
+}
+
+.loginBox {
+	background: #fff;
+	width: 490px;
+	margin: 0 auto;
+	border-radius: 4px;
+	overflow: hidden
+}
+
+.loginBox .selectReg ul li {
+	float: left;
+	height: 40px;
+	margin-left:13px;
+	line-height: 40px;
+	padding-left: 15px;
+	font-size: 14px;
+
+	cursor: pointer;
+}
+
+.loginBox h1 {
+	background: #f7f7f7;
+	border-bottom: 1px solid #dedfde;
+	font: normal 18px/56px "微软雅黑";
+	padding-left: 25px
+}
+
+#btnSendCode {
+	background: rgb(0, 142, 173);
+	padding: 7px 10px;
+	border-radius: 4px;
+	border: 1px solid rgb(26, 117, 152);
+	border-image: none;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	margin-left: 10px;
+	width: 75px;
+}
+
+.span {
+	width: 300px;
+	margin-left: 5px;
+	font-size: 12px;
+	color: red;
+}
+
+.signup-phone-box {
+	padding: 20px 25px;
+}
+
+.signup-box {
+	padding: 20px 25px;
+	
+	
+}
+.signup-common{
+	
+	width:390px;
+	margin-left:27px;
+	
+}
+.signup-common li {
+	padding-top: 10px;
+	line-height: 30px;
+	
+}
+
+.signup-common li input {
+	border: 1px solid #e5e5e5;
+	height: 38px;
+	line-height: 28px;
+	width: 323px;
+	color: #666666
+}
+
+.signup-common li.tishi {
+	color: #f00;
+	line-height: 20px;
+	padding-top: 0
+}
+
+.signup-common li.tishi em {
+	background: url(../image/common/icon_bg.png) no-repeat;
+	display: inline-block;
+	width: 16px;
+	line-height: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+
+
+
+.reg_main {
+	padding-top: 10px;
+	margin-left:58px;
+}
+
+.reg_main li.ohl {
+	margin-top: 30px;
+	border-top: 1px solid #e5e5e5
+}
+
+.reg_main li.ohl span {
+	line-height: 40px;
+	display: block
+}
+
+.reg_main a {
+	display: inline-block;
+	background: url(../image/ks_login.png) no-repeat 0 0;
+	height: 30px;
+	width: 90px;
+}
+
+.reg_main a.sina {
+	background-position: 0 -36px;
+}
+
+.reg_main input {
+	height: 42px;
+	border: 1px solid #fff;
+	line-height: 40px;
+	width: 320px;
+	text-align: center;
+	background: #ff5370;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.reg_main input:hover {
+	background: #cc425a;
+}
+
+.agreement {
+	padding: 5px 0;
+	color: #1c2736;
+	text-align: right
+}
+
+.agreement input {
+	vertical-align: middle;
+}
+
+.agreement a {
+	color: #ff5370
+}
+
+.sure-email {
+	padding-left: 25px;
+	background: url(../image/ks_login.png) no-repeat 0 -70px;
+	margin-top: 30px;
+	line-height: 20px;
+	color: #1c2736;
+}
+
+.depict {
+	padding-top: 10px;
+	line-height: 20px;
+}
+
+.depict a {
+	color: #ffae00;
+}
+
+.word_ms {
+	padding: 10px 0;
+}
+
+.word_ms a {
+	color: #ff5370
+}
+
+.word_ms strong {
+	font-size: 14px;
+	padding: 30px 0 10px 0;
+	display: block
+}
+
+.notes_sure {
+	padding: 0 0 20px 30px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.notes_sure em {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-left: -30px;
+	background: url(../image/common/icon_png.png) no-repeat -81px -105px
+}
